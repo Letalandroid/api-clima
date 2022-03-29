@@ -24,6 +24,8 @@ if (navigator.geolocation) { //check if geolocation is available
             .catch((err) => console.error(err));
 
     });
-};
+} else {
 
-// var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    document.getElementsByClassName("container")[0].innerHTML = "Porfavor activar la geolocalización."
+
+}
