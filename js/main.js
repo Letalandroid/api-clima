@@ -69,7 +69,7 @@ if (navigator.geolocation) { //check if geolocation is available
             .catch((err) => console.error(err));
 
     });
-};
+}
 
 document.querySelector(".fas").addEventListener("click", () => {
 
