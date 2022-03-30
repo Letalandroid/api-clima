@@ -59,13 +59,9 @@ if (navigator.geolocation) { //check if geolocation is available
                         break;
                 }
 
-                console.log(iconImg);
-
                 temperatura.innerHTML = `${Math.round(data.main.temp - 273.15)}ºC`;
                 humedad.innerHTML = `Humedad: ${data.main.humidity}%`;
                 wind.innerHTML = `Wind: ${data.wind.speed}mph`;
-
-                document.getElementById("favicon").href = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
 
             })
             .catch((err) => console.error(err));
