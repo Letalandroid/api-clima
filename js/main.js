@@ -59,6 +59,8 @@ if (navigator.geolocation) { //check if geolocation is available
                         break;
                 }
 
+                document.getElementById("clima-actual").style.backgroundImage = document.body.style.backgroundImage;
+
                 temperatura.innerHTML = `${Math.round(data.main.temp - 273.15)}ºC`;
                 humedad.innerHTML = `Humedad: ${data.main.humidity}%`;
                 wind.innerHTML = `Wind: ${data.wind.speed}mph`;
@@ -67,4 +69,16 @@ if (navigator.geolocation) { //check if geolocation is available
             .catch((err) => console.error(err));
 
     });
-}
+};
+
+document.querySelector(".fas").addEventListener("click", () => {
+
+    document.querySelector(".menu").style.left = 0;
+
+});
+
+document.getElementById("close").addEventListener("click", () => {
+
+    document.querySelector(".menu").style.left = "-55vw";
+
+});

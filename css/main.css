@@ -31,3 +31,57 @@ main {
 #icon {
     width: 80px;
 }
+
+em {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-text-stroke: 1px #000;
+}
+
+.menu {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -55vw;
+    background-color: lightsteelblue;
+    height: 100vh;
+    transition: left .5s;
+}
+
+.menu div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.menu h2 {
+    margin-right: 45px;
+    padding: 10px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+.link a {
+    position: absolute;
+    bottom: 0;
+}
+
+[alt="github"] {
+    width: 30px;
+}
+
+svg {
+    cursor: pointer;
+    width: 30px;
+    position: absolute;
+    top: 110px;
+    right: 10px;
+}
