@@ -1,4 +1,5 @@
 const icon = document.getElementById("icon");
+const Name = document.getElementById("ciudad");
 const temperatura = document.getElementById("temperatura");
 const humedad = document.getElementById("humedad");
 const wind = document.getElementById("wind");
@@ -61,6 +62,7 @@ if (navigator.geolocation) { //check if geolocation is available
 
                 document.getElementById("clima-actual").style.backgroundImage = document.body.style.backgroundImage;
 
+                Name.innerHTML = `Ciudad: ${data.name}`;
                 temperatura.innerHTML = `${Math.round(data.main.temp - 273.15)}ºC`;
                 humedad.innerHTML = `Humedad: ${data.main.humidity}%`;
                 wind.innerHTML = `Wind: ${data.wind.speed}mph`;
