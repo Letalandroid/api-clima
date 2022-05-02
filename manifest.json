@@ -1,0 +1,14 @@
+{
+    "name": "Weather",
+    "short_name": "Weather",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Una app de clima que gracias a la api de OpenWeatherMap se pudo lograr.",
+    "icons": [{
+    "src": "img/icon.png",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+  ]
+}
